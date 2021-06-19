@@ -76,13 +76,13 @@
   --ion-color-light-tint: #f5f6f9;
 }
 
-@media (prefers-color-scheme: dark) {
+//@media (prefers-color-scheme: dark) {
   /*
    * Dark Colors
    * -------------------------------------------
    */
 
-  body {
+  body[color-theme="dark"] {
     --ion-color-primary: #428cff;
     --ion-color-primary-rgb: 66,140,255;
     --ion-color-primary-contrast: #ffffff;
@@ -152,7 +152,7 @@
    * -------------------------------------------
    */
 
-  .ios body {
+  .ios body[color-theme="dark"] {
     --ion-background-color: #000000;
     --ion-background-color-rgb: 0,0,0;
 
@@ -196,7 +196,7 @@
    * -------------------------------------------
    */
 
-  .md body {
+  .md body[color-theme="dark"] {
     --ion-background-color: #121212;
     --ion-background-color-rgb: 18,18,18;
 
@@ -233,4 +233,22 @@
 
     --ion-card-background: #1e1e1e;
   }
+
+  body[font-size="big"],
+  body[font-size="big"] ion-button,
+  body[font-size="big"] ion-content,
+  body[font-size="big"] ion-title,
+  body[font-size="big"] strong,
+  {
+    font-size: 1.5rem !important;
+  }
+
+body[font-spacing="space"],
+body[font-spacing="space"] ion-button,
+body[font-spacing="space"] ion-content,
+body[font-spacing="space"] ion-title,
+body[font-spacing="space"] strong,
+{
+  letter-spacing: 1.1rem !important;
 }
+//}
